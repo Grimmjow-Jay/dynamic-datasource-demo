@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    multi-datasources:
+      default:
+        primary: true
+        url: jdbc:mysql://192.168.60.135:3306/zc_order?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useAffectedRows=true
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: ${MYSQL_USER:root}
+        password: ${MYSQL_PASSWORD:lMyk516h}
+      dev:
+        url: jdbc:mysql://192.168.60.137:3306/zc_order?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useAffectedRows=true
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: ${MYSQL_USER:root}
+        password: ${MYSQL_PASSWORD:lMyk516h}
